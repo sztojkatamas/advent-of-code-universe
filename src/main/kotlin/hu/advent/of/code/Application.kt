@@ -18,6 +18,17 @@ class Application {
             hu.advent.of.code.year2015.day6.Puzzle6B()
         )
 
+        val puzzles2018 = listOf(
+            hu.advent.of.code.year2018.day1.Puzzle1A(),
+            hu.advent.of.code.year2018.day1.Puzzle1B(),
+            hu.advent.of.code.year2018.day2.Puzzle2A(),
+            hu.advent.of.code.year2018.day2.Puzzle2B(),
+            hu.advent.of.code.year2018.day3.Puzzle3A(),
+            hu.advent.of.code.year2018.day3.Puzzle3B(),
+            hu.advent.of.code.year2018.day5.Puzzle5A(),
+            hu.advent.of.code.year2018.day5.Puzzle5B()
+        )
+
         val puzzles2019 = listOf(
             hu.advent.of.code.year2019.day1.Puzzle1A(),
             hu.advent.of.code.year2019.day1.Puzzle1B(),
@@ -57,11 +68,11 @@ class Application {
             hu.advent.of.code.year2021.day3.Puzzle3A(),
             hu.advent.of.code.year2021.day3.Puzzle3B()
         )
-
-//        puzzles2015.forEach { it.run() }
-//        puzzles2019.forEach { it.run() }
+        puzzles2015.forEach { it.run() }
+        puzzles2018.forEach { it.run() }
+        puzzles2019.forEach { it.run() }
         puzzles2020.forEach { it.run() }
-//        puzzles2021.forEach { it.run() }
+        puzzles2021.forEach { it.run() }
     }
 }
 
