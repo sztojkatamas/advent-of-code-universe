@@ -1,7 +1,9 @@
 package hu.advent.of.code.year2020.day2
 
+import hu.advent.of.code.AdventOfCodePuzzle
 import hu.advent.of.code.BaseChallenge
 
+@AdventOfCodePuzzle
 class Puzzle2B: BaseChallenge(2020) {
 
     override fun run() {
@@ -11,7 +13,7 @@ class Puzzle2B: BaseChallenge(2020) {
     }
 }
 
-class PasswordPolicyAdvanced(private var input:String) {
+class PasswordPolicyAdvanced(input:String) {
 
     private var min = 0
     private var max = 0

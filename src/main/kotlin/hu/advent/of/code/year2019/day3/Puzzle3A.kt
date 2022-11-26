@@ -1,8 +1,10 @@
 package hu.advent.of.code.year2019.day3
 
+import hu.advent.of.code.AdventOfCodePuzzle
 import hu.advent.of.code.BaseChallenge
 import kotlin.math.abs
 
+@AdventOfCodePuzzle
 class Puzzle3A: BaseChallenge(2019) {
 
     override fun run() {

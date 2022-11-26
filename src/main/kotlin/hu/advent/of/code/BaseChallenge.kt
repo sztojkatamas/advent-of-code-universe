@@ -1,6 +1,6 @@
 package hu.advent.of.code
 
-import java.util.*
+import java.util.Scanner
 
 abstract class BaseChallenge(private val year: Int) {
 
@@ -23,6 +23,7 @@ abstract class BaseChallenge(private val year: Int) {
         data.forEach { intData.add(it.toInt()) }
         return intData
     }
+
     open fun loadLongDataFromFile(filename: String): List<Long> {
         val longData = mutableListOf<Long>()
         loadDataFromFile(filename)
@@ -37,11 +38,6 @@ abstract class BaseChallenge(private val year: Int) {
             "a" -> 1
             else ->2
         }
-
         println("\n$year [ Day ${dayAndNum.dropLast(1)} - Puzzle $num ]")
-
-
-
-
     }
 }

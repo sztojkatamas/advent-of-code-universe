@@ -1,8 +1,10 @@
 package hu.advent.of.code.year2015.day4
 
+import hu.advent.of.code.AdventOfCodePuzzle
 import hu.advent.of.code.BaseChallenge
 import java.security.MessageDigest
 
+@AdventOfCodePuzzle
 class Puzzle4B:BaseChallenge(2015) {
     override fun run() {
         printPuzzleName()

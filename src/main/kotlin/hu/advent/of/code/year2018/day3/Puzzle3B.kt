@@ -1,8 +1,9 @@
 package hu.advent.of.code.year2018.day3
 
+import hu.advent.of.code.AdventOfCodePuzzle
 import hu.advent.of.code.BaseChallenge
 
-
+@AdventOfCodePuzzle
 class Puzzle3B: BaseChallenge(2018) {
 
     private val claims = ArrayList<FabricClaim>()

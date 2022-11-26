@@ -1,7 +1,9 @@
 package hu.advent.of.code.year2015.day1
 
+import hu.advent.of.code.AdventOfCodePuzzle
 import hu.advent.of.code.BaseChallenge
 
+@AdventOfCodePuzzle
 class Puzzle1B: BaseChallenge(2015) {
 
     override fun run() {
@@ -16,8 +18,8 @@ class Puzzle1B: BaseChallenge(2015) {
     }
 
     private fun calculateFloor(s:String):Int {
-        var up = s.count { it.equals('(') }
-        var down = s.count { it.equals(')') }
+        val up = s.count { it.equals('(') }
+        val down = s.count { it.equals(')') }
         return up-down
     }
 

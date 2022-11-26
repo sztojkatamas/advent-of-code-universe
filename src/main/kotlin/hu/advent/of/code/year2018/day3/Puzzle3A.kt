@@ -1,8 +1,9 @@
 package hu.advent.of.code.year2018.day3
 
+import hu.advent.of.code.AdventOfCodePuzzle
 import hu.advent.of.code.BaseChallenge
 
-
+@AdventOfCodePuzzle
 class Puzzle3A: BaseChallenge(2018) {
 
     private val claims = ArrayList<FabricClaim>()
@@ -23,8 +24,8 @@ class Puzzle3A: BaseChallenge(2018) {
             claims.add(claim)
         }
 
-        claims.forEach(this::putClaimOnCloth);
-        println("Overlapping claims in square inches: ${countOverlap()}");
+        claims.forEach(this::putClaimOnCloth)
+        println("Overlapping claims in square inches: ${countOverlap()}")
 
 
     }

@@ -1,7 +1,9 @@
 package hu.advent.of.code.year2020.day10
 
+import hu.advent.of.code.AdventOfCodePuzzle
 import hu.advent.of.code.BaseChallenge
 
+@AdventOfCodePuzzle
 class Puzzle10B : BaseChallenge(2020) {
 
     override fun run() {
