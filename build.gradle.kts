@@ -1,6 +1,3 @@
-import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
     kotlin("jvm") version "1.7.21"
     application
@@ -14,10 +11,8 @@ application {
     mainClass.set("hu.advent.of.code.ApplicationKt")
 }
 
-tasks {
-    named<ShadowJar>("shadowJar") {
+tasks.shadowJar {
         minimize()
-    }
 }
 
 repositories {
@@ -33,12 +28,12 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test:1.6.0")
 }
 
-tasks.withType<KotlinCompile> {
+tasks.compileKotlin {
     kotlinOptions {
         freeCompilerArgs = listOf("-Xjsr305=strict")
         jvmTarget = "17"
     }
 }
-tasks.withType<Test> {
+tasks.test {
     useJUnitPlatform()
 }
