@@ -1,10 +1,10 @@
 package hu.advent.of.code.year2015.day5
 
-import hu.advent.of.code.year2015.day5.Puzzle5B
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Test
 import kotlin.concurrent.thread
+import kotlin.test.assertEquals
 
 class Puzzle5BTest {
 
@@ -49,13 +49,12 @@ class Puzzle5BTest {
         val s2 = thread(start = true, isDaemon = true) {
             println("Start - 2")
             while (t>System.currentTimeMillis()) {
-                val ddd = map.filter { it.value.isAlive == false }.count()
-                println(ddd)
+                assertEquals(3001, map.filter { it.value.isAlive == false }.count())
             }
         }
 
         while (s1.isAlive || s2.isAlive) {
-
+            /* nop */
         }
     }
 }
