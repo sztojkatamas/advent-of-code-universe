@@ -1,7 +1,11 @@
+import com.adarshr.gradle.testlogger.theme.*
+import org.gradle.api.logging.LogLevel
+
 plugins {
     kotlin("jvm") version "1.7.21"
     application
     id("com.github.johnrengelman.shadow") version "7.1.0"
+    id("com.adarshr.test-logger") version "3.2.0"
 }
 
 version = "1.0.0"
@@ -36,4 +40,14 @@ tasks.compileKotlin {
 }
 tasks.test {
     useJUnitPlatform()
+}
+
+testlogger {
+    theme = ThemeType.STANDARD
+    showSummary = true
+    showStandardStreams = true
+    showPassedStandardStreams = true
+    showSkippedStandardStreams = true
+    showFailedStandardStreams = true
+    logLevel = LogLevel.LIFECYCLE
 }
