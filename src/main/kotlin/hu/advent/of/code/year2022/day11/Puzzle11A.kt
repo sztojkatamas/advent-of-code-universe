@@ -2,11 +2,9 @@ package hu.advent.of.code.year2022.day11
 
 import hu.advent.of.code.AdventOfCodePuzzle
 import hu.advent.of.code.BaseChallenge
-import hu.advent.of.code.RunOnlyThis
 import kotlin.math.floor
 
 @AdventOfCodePuzzle
-@RunOnlyThis
 class Puzzle11A: BaseChallenge(2022) {
     override fun run() {
         printPuzzleName()
