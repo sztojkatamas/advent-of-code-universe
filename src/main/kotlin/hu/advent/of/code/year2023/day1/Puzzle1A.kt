@@ -2,10 +2,8 @@ package hu.advent.of.code.year2023.day1
 
 import hu.advent.of.code.AdventOfCodePuzzle
 import hu.advent.of.code.BaseChallenge
-import hu.advent.of.code.RunOnlyThis
 
 @AdventOfCodePuzzle
-@RunOnlyThis
 class Puzzle1A: BaseChallenge(2023) {
 
     override fun run() {
@@ -18,6 +16,5 @@ class Puzzle1A: BaseChallenge(2023) {
         }
 
         println("The sum of all of the calibration values: $sum")
-
     }
 }
